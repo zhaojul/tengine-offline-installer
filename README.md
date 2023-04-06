@@ -1,6 +1,5 @@
 # tengine-offline-installer
 
-## What's this?
 
 Use the offline installer if the host to which are installing tengine does not have a connection to the Internet.
 

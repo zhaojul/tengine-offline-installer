@@ -1,6 +1,6 @@
 # tengine-offline-installer
 
-顾名思义，就是`tengine` web 服务器的离线安装包，在服务器无法连接网络时可以使用这个离线包安装tengine
+顾名思义，就是`tengine`服务器的离线安装包，在服务器无法连接网络时可以使用这个离线包安装tengine
 
 关于tengine的更多内容，可以访问官方[github](https://github.com/alibaba/tengine)或者[官网](https://tengine.taobao.org)
 
@@ -17,12 +17,12 @@
 ```
 tar -zxf tengine-offline-installer-v2.4.1.tgz
 cd tengine-offline-installer-v2.4.1
-./install
+./install.sh
 ```
 
 ## 其他问题
 
-* 如果可以访问公网或者内网yum源，可以将`install.sh`脚本中安装rpm包的步骤注释掉，之星`cat ./rpm-packages/README.md`查看需要安装哪些包，可以手动进行安装
-* 这个安装包中默认加入的模块比较多，正常使用是用不到这么多的，可以修改`install.sh`去掉一部分
-* 有其它问题，可以提交问题留言
+* 如果可以访问公网或者内网yum源，可以将`install.sh`脚本中安装rpm包的步骤注释掉，`cat rpm-packages/README.md`查看需要安装哪些包，可以手动进行安装
+* 这个安装包中默认加入的模块比较多，正常使用是用不到这么多的，可以修改`install.sh`和`config/modules.conf`去掉一部分
+* 有其它问题，可以提交[Issues](https://github.com/zhaojul/tengine-offline-installer/issues)
 
